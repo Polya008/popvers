@@ -41,7 +41,7 @@ module.exports = {
               bypassOnDebug: true, // webpack@1.x
               disable: true, // webpack@2.x and newer
             }
-              optipng: {
+              options: {
           enabled: false,
         },
         pngquant: {
