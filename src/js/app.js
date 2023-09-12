@@ -1,3 +1,3 @@
-import addPopover from './widgetAddDom.js';
+import addPopover from './widgetAddDom';
 
 addPopover();
