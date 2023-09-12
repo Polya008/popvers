@@ -3,22 +3,19 @@ const HtmlWebPackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports = {
-  preset: 'ts-jest',
-  moduleFileExtensions: ['ts', 'tsx', 'js'],
-  globals: { 'ts-jest': { tsConfig: 'tsconfig.json' } },
-  testMatch: ['**/test/**/*.test.(ts|tsx)'],
-  passWithNoTests: true,
   output: {
-    path: path.resolve(__dirname, "dist"),
-    publicPath: "",
+    path: path.resolve(__dirname, 'dist'),
   },
   module: {
     rules: [
       {
-        test: /\.js$/,
-        exclude: /node_modules/,
+        test: /\.m?js$/,
+        exclude: /(node_modules|bower_components)/,
         use: {
-          loader: "babel-loader",
+          loader: 'babel-loader',
+          options: {
+            presets: ['@babel/preset-env'],
+          },
         },
       },
       {
