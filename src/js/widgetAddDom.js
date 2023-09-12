@@ -1,4 +1,4 @@
-import popovers from './popovers.js';
+import popovers from './popovers';
 
 export default function addPopover() {
   const btn = document.querySelector('.btn');
