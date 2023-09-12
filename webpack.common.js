@@ -7,8 +7,7 @@ module.exports = {
   moduleFileExtensions: ['ts', 'tsx', 'js'],
   globals: { 'ts-jest': { tsConfig: 'tsconfig.json' } },
   testMatch: ['**/test/**/*.test.(ts|tsx)'],
-  passWithNoTests: true
-  target: "web",
+  passWithNoTests: true,
   output: {
     path: path.resolve(__dirname, "dist"),
     publicPath: "",
