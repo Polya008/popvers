@@ -61,7 +61,7 @@
 
   .arrow::after {
     content: '';
-    position: absolute;
+    position: relative;
     border: 10px solid transparent;
     border-top: 10px solid rgb(187, 187, 187);
   }
